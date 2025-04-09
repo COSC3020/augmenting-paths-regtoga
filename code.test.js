@@ -8,7 +8,8 @@ var graph = {'foo': {'boo': 7},
     'bar': {'boo': 4}};
 assert(JSON.stringify(augmentingPath(graph, 'foo', 'bar')) == JSON.stringify(['foo', 'boo', 'bar']));
 
-var graph = {'foo': {'boo': 7, 'd': 4},
+var graph = {
+    'foo': {'boo': 7, 'd': 4},
     'boo': {'e': 3},
     'd': {'bar': 4},
     'e': {'foo': 1},
